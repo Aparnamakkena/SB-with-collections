@@ -15,12 +15,14 @@ public class myApp {
 		
 		Fruit myfruit = appContext.getBean("fruit",Fruit.class);
 		Vegetable myvegetable =(Vegetable)appContext.getBean("vegetable");	
-		
-		Fruit myotherfruit = appContext.getBean("fruithwithname",Fruit.class);
+		Fruit fruitt=(Fruit)appContext.getBean("fruitwithlistandmap");
 		
 		System.out.println(myfruit.talkaboutyourself());
 		System.out.println(myvegetable.talkaboutyourself());
-		System.out.println(myotherfruit.talkaboutyourself());
+		System.out.println(fruitt.talkaboutyourself());
+		
+		
+		
 
 	}
 

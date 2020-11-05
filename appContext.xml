@@ -5,10 +5,20 @@
 
 	<bean id="fruit" class="mySimpleSpringApp.Fruit"></bean>
 	
-	<bean id="fruithwithname" class="mySimpleSpringApp.Fruit">
-		<constructor-arg index="0" value="Apple">		
-		</constructor-arg>
-	
+
+	<bean id="fruitwithlistandmap" class="mySimpleSpringApp.Fruit">
+		<property name="fruitNamelist">
+			<list>
+			<value>Apple</value>
+			<value>Banana</value>
+			</list>
+		</property>
+		<property name="fruitNameMap">
+			<map>
+				<entry key="apple" value="red" />
+				<entry key="Banana" value="Yellow" />
+			</map>
+		</property>
 	</bean>
 	<bean id="vegetable" class="mySimpleSpringApp.Vegetable"></bean>
 </beans>
